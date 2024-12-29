@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
     </style>
   </head>
   <body>
-    <header class="bg-blue-600 py-4">
+    <header class="bg-blue-600 py-4 dark:bg-gray-900">
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold text-white mr-auto">Brand</h1>
         <!-- navbar untuk tablet dan desktop -->
@@ -29,9 +29,12 @@
         <button class="ml-8 md:hidden lg:hidden sm:flex" onclick="toggle()">
           <i class="fa-solid fa-bars text-white text-xl"></i>
         </button>
+        <button class="ml-8 text-gray-900 dark:text-white" onclick="darkMode()">
+          <i class="fa-solid fa-moon text-xl"></i>
+        </button>
       </div>
           <!-- navbar untuk mobile -->
-          <nav class="text-base gap-4 bg-white py-4 mt-4 hidden" id="menuMobile">
+          <nav class="text-base gap-4 bg-white dark:bg-gray-700 py-4 mt-4 hidden" id="menuMobile">
             <a class="menu-text-mobile" href="#">Home</a>
             <a class="menu-text-mobile" href="#">About Us</a>
             <a class="menu-text-mobile" href="#">Services</a>
@@ -58,39 +61,39 @@
         />
       </div>
     </header>
-    <section>
+    <section class="bg-white dark:bg-gray-900">
       <div class="container mx-auto justify-between items-center pt-32 pb-20">
-        <h1 class="text-4xl">OUR PRODUCT</h1>
+        <h1 class="text-4xl text-gray-900 dark:text-white">OUR PRODUCT</h1>
     <!-- gap untuk mengatur jarak -->
     <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://plus.unsplash.com/premium_photo-1674389991678-0836ca77c7f7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wzfHx8ZW58MHx8fHx8" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 1</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 1</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://media.istockphoto.com/id/1326644640/photo/battery-for-dslr-camera.webp?a=1&s=612x612&w=0&k=20&c=kBEB_xOLuThuw1FHnUMouIYpzS8lXmV5tEYBCpVG3yk=" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 2</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 2</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://media.istockphoto.com/id/1341049803/photo/a-man-hold-camera-in-hand-with-white-screen-monitor-on-camera-and-photography-equipment-on.webp?a=1&s=612x612&w=0&k=20&c=2Of_R3I_S4nwO5pj77yPwJbjQAtzbinzTyl6wXi9mmQ=" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 3</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 3</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://media.istockphoto.com/id/1254633731/id/foto/influencer-media-sosial-menggunakan-kamera.jpg?s=612x612&w=0&k=20&c=Wo9G2x9VxW4PYEG23CAmDyb4tBMzlI66fPku9exk5CQ=" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 4</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 4</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://media.istockphoto.com/id/946419920/id/foto/wanita-dengan-kamera-retro.jpg?s=612x612&w=0&k=20&c=cx65jCYG2tPOzsp42gfwrbDM1mTbs08-TqHl6F23Tdo=" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 5</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 5</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
       <div class="bg-white p-6 shadow hover:shadow-lg transition cursor-pointer rounded-lg animate-in">
         <img src="https://media.istockphoto.com/id/1188790944/id/foto/ponsel-mobil-retro.jpg?s=612x612&w=0&k=20&c=nxthKzCAuEONL9AE92XwbvD0qmCCukRaTrfFu4zxguw=" alt="samsung">
-        <h3 class="text-xl font-bold mt-3">Product 6</h3>
+        <h3 class="text-xl font-bold mt-3 text-gray-900 dark:text-gray-800">Product 6</h3>
         <p class="text-orange-400">Rp.500.000</p>
       </div>
     </div>
@@ -102,6 +105,11 @@
           function toggle() {
             const element = document.getElementById("menuMobile");
             element.classList.toggle("hidden");
+          }
+
+          function darkMode() {
+            const element = document.querySelector("html");
+            element.classList.toggle("dark");
           }
     </script>
   </body>

@@ -7,7 +7,7 @@
 }
 
 .menu-text-mobile{
-    @apply text-gray-800 font-medium px-6 py-2 block;
+    @apply text-gray-800 dark:text-white font-medium px-6 py-2 block;
 }
 .custom-font {
     font-family: "Courier New", 'Courier New', Courier, monospace;
@@ -28,4 +28,8 @@
         opacity: 100;
         transform: translateX(0);
     }
+}
+
+.card {
+    @apply bg-white dark:bg-gray-700 p-6 shadow hover:shadow-lg transition cursor-pointer animate-in;
 }
